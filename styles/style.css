@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --branco: #FFFFFF;
+    --azul: #17283F;
+    --azul-escuro: #101D30;
+    --dourado: #BD9464;
+    --cinza: #666666;
+
+    --font-principal: 'Outfit', sans-serif;
+    --font-titulo: 'Playfair Display', serif;
+}
+
+body {
+    font-family: var(--font-principal);
+    background-color: var(--branco);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 82px;
+    background-color: var(--branco);
+    padding: 0 17%; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--dourado);
+    border-radius: 50%;
+    color: var(--branco);
+    font-family: var(--font-titulo);
+    font-weight: 600;
+}
+
+.titu {
+    color: var(--azul);
+    font-family: var(--font-titulo);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-right: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: var(--dourado);
+}
+
+.botao-header {
+    text-decoration: none;
+    background-color: var(--dourado);
+    color: var(--branco);
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.botao-header:hover{
+    transform: translateY(-2px);
+    background-color: var(--dourado);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 82px);
+    min-height: 650px;
+    position: relative;
+    background-image: url();
+
+}
