@@ -203,6 +203,22 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.6);
     border-radius: 15px;
     position: relative;
+    animation: mouse 1s infinite ease-in-out;
+}
+
+@keyframes mouse {
+    0%{
+        transform:translateY(-7px)
+    }
+    40%{
+        transform: translateY(-4px);
+    }
+    50%{
+        transform:translateY(0)
+    }
+    100%{
+        transform:translateY(-7px)
+    }
 }
 
 .mouse::before {
