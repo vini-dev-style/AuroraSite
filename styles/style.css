@@ -104,6 +104,133 @@ body {
     height: calc(100vh - 82px);
     min-height: 650px;
     position: relative;
-    background-image: url();
+    background-image: url(../img/Mansão\ moderna\ refletida\ na\ piscina\ ao\ entardecer.png);
+    background-size: cover;
+    background-position: center;
+}
 
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 29, 48, 0.78);
+}
+
+.conteudo-hero {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    padding: 40px;
+}
+
+.subtitulo {
+    color: var(--dourado);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
+}
+
+.conteutitulo {
+    color: var(--branco);
+    font-family: var(--font-titulo);
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.05;
+    margin-bottom: 35px;
+}
+
+.conteutitulo span {
+    color: var(--dourado);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.descricao {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 17px; 
+    line-height: 1.7;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.botao-principal {
+    text-decoration: none;
+    background-color: var(--dourado);
+    color: var(--branco);
+    padding: 17px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    background-color: #b8894b;
+    transform: translateY(-2px);
+}
+
+.botao-secundario {
+    text-decoration: none;
+    color: var(--branco);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.botao-secundario:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.mouse {
+    width: 22px;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    position: relative;
+}
+
+.mouse::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 7px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: #25D366;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    z-index: 20;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
