@@ -115,7 +115,7 @@ body {
 }
 
 .botao-header:hover {
-    background-color: #C49A68;
+    background: linear-gradient(200deg, #8f683b 0%, var(--dourado) 150%);
     transform: translateY(-2px);
     box-shadow: 0 15px 40px rgba(255,157,0,0.15);
 }
@@ -192,14 +192,14 @@ body {
     border-radius: 30px;
     font-weight: 600;
     transition: 
-    transform 0.35s ease,
+    transform 0.3s ease-in-out,
     box-shadow 0.35s ease,
     background-color 0.35s ease;
     
 }
 
 .botao-principal:hover {
-    background-color: #C49A68;
+    background: linear-gradient(200deg, #8f683b 0%, var(--dourado) 150%);
     transform: translateY(-2px);
     box-shadow: 0 15px 40px rgba(255,157,0,0.15);
 }
