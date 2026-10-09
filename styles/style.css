@@ -108,12 +108,16 @@ body {
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background-color 0.35s ease;
 }
 
 .botao-header:hover {
+    background-color: #C49A68;
     transform: translateY(-2px);
-    background-color: var(--dourado);
+    box-shadow: 0 15px 40px rgba(255,157,0,0.15);
 }
 
 .hero {
@@ -258,20 +262,3 @@ body {
     border-radius: 5px;
 }
 
-.whatsapp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    width: 55px;
-    height: 55px;
-    background-color: #25D366;
-    border-radius: 50%;
-    color: white;
-    font-size: 25px;
-    text-decoration: none;
-    z-index: 20;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
